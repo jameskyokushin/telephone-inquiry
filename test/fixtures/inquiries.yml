@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2011-09-20
+  system: MyString
+  company: MyString
+  name: MyString
+  e_mail: MyString
+  house_building: MyString
+  street: MyString
+  barangay: MyString
+  city: MyString
+  province: MyString
+  telephone: MyString
+  cellphone: MyString
+  fax: MyString
+  request: MyText
+  concern: MyText
+  inquiry: MyText
+
+two:
+  date: 2011-09-20
+  system: MyString
+  company: MyString
+  name: MyString
+  e_mail: MyString
+  house_building: MyString
+  street: MyString
+  barangay: MyString
+  city: MyString
+  province: MyString
+  telephone: MyString
+  cellphone: MyString
+  fax: MyString
+  request: MyText
+  concern: MyText
+  inquiry: MyText

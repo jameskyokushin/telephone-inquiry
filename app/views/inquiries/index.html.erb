@@ -1,0 +1,53 @@
+<h1>Listing inquiries</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>System</th>
+    <th>Company</th>
+    <th>Name</th>
+    <th>E mail</th>
+    <th>House building</th>
+    <th>Street</th>
+    <th>Barangay</th>
+    <th>City</th>
+    <th>Province</th>
+    <th>Telephone</th>
+    <th>Cellphone</th>
+    <th>Fax</th>
+    <th>Request</th>
+    <th>Concern</th>
+    <th>Inquiry</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @inquiries.each do |inquiry| %>
+  <tr>
+    <td><%= inquiry.date %></td>
+    <td><%= inquiry.system %></td>
+    <td><%= inquiry.company %></td>
+    <td><%= inquiry.name %></td>
+    <td><%= inquiry.e_mail %></td>
+    <td><%= inquiry.house_building %></td>
+    <td><%= inquiry.street %></td>
+    <td><%= inquiry.barangay %></td>
+    <td><%= inquiry.city %></td>
+    <td><%= inquiry.province %></td>
+    <td><%= inquiry.telephone %></td>
+    <td><%= inquiry.cellphone %></td>
+    <td><%= inquiry.fax %></td>
+    <td><%= inquiry.request %></td>
+    <td><%= inquiry.concern %></td>
+    <td><%= inquiry.inquiry %></td>
+    <td><%= link_to 'Show', inquiry %></td>
+    <td><%= link_to 'Edit', edit_inquiry_path(inquiry) %></td>
+    <td><%= link_to 'Destroy', inquiry, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Inquiry', new_inquiry_path %>
