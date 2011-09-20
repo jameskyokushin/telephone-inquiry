@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Service And Telephone Call</title>
-  
-</head>
-<body>
+  <head>
+    <title>Service & Call Inquiry</title>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body>
+    <div class="container">
       <header>
-        <%= image_tag("logo.png", :alt => "LOGO", :class => "round") %>
-        
+        <%= image_tag("logo.png", :alt => "LOGOGo", :class => "round") %>
+        <nav class="round">
+          
+        </nav>
       </header>
       <section class="round">
-        <%= link_to 'Create Inquiry', new_inquiry_path %> ||
-        <%= link_to 'Pending Inquiry', inquiries_path %> ||
-        <%= link_to 'Pending Call', '#' %> ||
-        <%= link_to 'Solved', '#' %>
         <%= yield %>
       </section>
     </div>
-
-</body>
+  </body>
 </html>
+
