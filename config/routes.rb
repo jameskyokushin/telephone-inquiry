@@ -1,6 +1,6 @@
 TelInq::Application.routes.draw do
   resources :inquiries
-
+  root :to => "inquiries#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
