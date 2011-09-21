@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :system %><br />
-    <%= f.text_field :system %>
+    <%= f.text_field :system, :collection => [["james","james"],["martin","martin"]] %>
   </div>
   <div class="field">
     <%= f.label :company %><br />

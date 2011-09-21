@@ -10,7 +10,8 @@
     <th>System</th>
     <th>Company</th>
  
-    <th>E mail</th>
+    <th>Email</th>
+    <th>Technical</th>
     
     <th></th>
     <th></th>
@@ -24,10 +25,10 @@
     <td><%= inquiry.company %></td>
    
     <td><%= inquiry.e_mail %></td>
-   
+    <td><%= inquiry.technical %></td>
     <td><%= link_to 'View', inquiry %></td>
     <td><%= link_to 'Assign to:', edit_inquiry_path(inquiry) %></td>
-    <!--<td><%= link_to 'Destroy', inquiry, :confirm => 'Are you sure?', :method => :delete %></td>-->
+    <!--<td><%= link_to 'Solve', inquiry, :confirm => 'Are you sure?' %></td>-->
   </tr>
 <% end %>
 </table>

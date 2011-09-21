@@ -1,4 +1,8 @@
-<h1>Update Inquiry</h1>
+<div id="link">
+ <h3><%= link_to 'Create Inquiry', new_inquiry_path %> ||
+ <%= link_to 'All Inquiry', inquiries_path %></h3>
+</div>
+<h1>Assigned Technical</h1>
 
 <%= form_for(@inquiry) do |f| %>
   <% if @inquiry.errors.any? %>
